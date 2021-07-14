@@ -12,6 +12,7 @@ html {
 .sidebar {
   color: #000;
   background-color: #fff;
+  box-shadow: 3px 3px 3px rgb(97, 97, 97);
 }
 
 .sidebar:hover {
@@ -25,15 +26,16 @@ html {
 
 /*Mobile Devices*/
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 449px) {
   .sidebar {
     height: 100vh;
-    width: 20vw;
+    width: 50vw;
     padding: 0.5em;
   }
 
   .sidebar .section .header {
     font-size: 1.1rem;
+    line-height: 25px;
   }
 
   .sidebar .section .menu .item {
@@ -43,15 +45,16 @@ html {
 
 /*Mini Ipads, etc.*/
 
-@media screen and (min-width: 550px) and (max-width: 767px) {
+@media screen and (min-width: 450px) and (max-width: 767px) {
   .sidebar {
     height: 100vh;
-    width: 20vw;
+    width: 35vw;
     padding: 0.75em;
   }
 
   .sidebar .section .header {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 25px;
   }
 
   .sidebar .section .menu .item {
@@ -64,12 +67,13 @@ html {
 @media screen and (min-width: 768px) and (max-width: 1299px) {
   .sidebar {
     height: 100vh;
-    width: 20vw;
+    width: 25vw;
     padding: 0.85em;
   }
 
   .sidebar .section .header {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    line-height: 25px;
   }
 
   .sidebar .section .menu .item {
@@ -87,7 +91,8 @@ html {
   }
 
   .sidebar .section .header {
-    font-size: 1.45rem;
+    font-size: 1.25rem;
+    line-height: 25px;
   }
 
   .sidebar .section .menu .item {
