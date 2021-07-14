@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #fe9526;
+  --secondary-color1: #00194c;
+  --outer-details: #b1b1b1;
+  --inner-details: #8d8c8c;
+}
+
+html {
+  font-size: 18px;
+}
+
+.sidebar {
+  color: #000;
+  background-color: #fff;
+}
+
+.sidebar:hover {
+  cursor: default;
+}
+
+.sidebar .section .menu .item:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+/*Mobile Devices*/
+
+@media screen and (max-width: 549px) {
+  .sidebar {
+    height: 100vh;
+    width: 20vw;
+    padding: 0.5em;
+  }
+
+  .sidebar .section .header {
+    font-size: 1.1rem;
+  }
+
+  .sidebar .section .menu .item {
+    font-size: 0.6rem;
+  }
+}
+
+/*Mini Ipads, etc.*/
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+  .sidebar {
+    height: 100vh;
+    width: 20vw;
+    padding: 0.75em;
+  }
+
+  .sidebar .section .header {
+    font-size: 1.2rem;
+  }
+
+  .sidebar .section .menu .item {
+    font-size: 0.75rem;
+  }
+}
+
+/*Tablets and mini-PCs*/
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+  .sidebar {
+    height: 100vh;
+    width: 20vw;
+    padding: 0.85em;
+  }
+
+  .sidebar .section .header {
+    font-size: 1.3rem;
+  }
+
+  .sidebar .section .menu .item {
+    font-size: 0.75rem;
+  }
+}
+
+/*Desktops and Computers*/
+
+@media only screen and (min-width: 1300px) {
+  .sidebar {
+    height: 100vh;
+    width: 20vw;
+    padding: 1em;
+  }
+
+  .sidebar .section .header {
+    font-size: 1.45rem;
+  }
+
+  .sidebar .section .menu .item {
+    font-size: 1 rem;
+  }
+}
