@@ -6,6 +6,10 @@
     "build": "vite build",
     "serve": "vite preview"
   },
+  "engines" : { 
+    "node" : ">=14.17.0" 
+  },
+  "engineStrict" : true,
   "dependencies": {
     "components": "^0.1.0",
     "fomantic-ui": "^2.8.8",
