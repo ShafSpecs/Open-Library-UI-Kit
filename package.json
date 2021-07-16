@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/ShafSpecs/Open-Library-UI-Kit.git"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "engineStrict": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
