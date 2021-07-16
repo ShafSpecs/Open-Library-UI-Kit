@@ -9,13 +9,19 @@ html {
   font-size: 18px;
 }
 
+.pagelayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .mainpage {
   color: #000;
   background-color: #fff;
   display: inline-block;
   position: relative;
-  right: 0;
-  left: 50%;
+  height: 100%;
+  padding: 0.5rem;
 }
 
 .mainpage .pagetitle .desc {
@@ -24,13 +30,13 @@ html {
 
 .sidebar {
   color: #000;
-  background-color: #fff;
+  background-color: rgb(243, 243, 243);
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
 }
 
 .mobile-sidebar {
   color: #000;
-  background-color: #fff;
+  background-color: rgb(243, 243, 243);
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
   z-index: 1;
   height: 100%;
@@ -59,16 +65,16 @@ html {
     padding: 0.5em;
   }
 
-  .pagelayout {
+  .mainpage {
     width: 50vw;
     height: 100vh;
   }
 
-  .pagelayout .pagetitle .title {
+  .mainpage .pagetitle .title {
     font-size: 1.2rem;
   }
 
-  .pagelayout .pagetitle .desc {
+  .mainpage .pagetitle .desc {
     font-size: 0.8rem;
   }
 
@@ -92,16 +98,16 @@ html {
     padding: 0.75em;
   }
 
-  .pagelayout {
+  .mainpage {
     width: 65vw;
     height: 100vh;
   }
 
-  .pagelayout .pagetitle .title {
+  .mainpage .pagetitle .title {
     font-size: 1.15rem;
   }
 
-  .pagelayout .pagetitle .desc {
+  .mainpage .pagetitle .desc {
     font-size: 0.9rem;
   }
 
@@ -125,16 +131,16 @@ html {
     padding: 0.85em;
   }
 
-  .pagelayout {
+  .mainpage {
     width: 75vw;
     height: 100vh;
   }
 
-  .pagelayout .pagetitle .title {
+  .mainpage .pagetitle .title {
     font-size: 1.25rem;
   }
 
-  .pagelayout .pagetitle .desc {
+  .mainpage .pagetitle .desc {
     font-size: 0.9rem;
   }
 
@@ -162,12 +168,12 @@ html {
     padding: 1em;
   }
 
-  .pagelayout {
+  .mainpage {
     width: 80vw;
     height: 100vh;
   }
 
-  .pagelayout .pagetitle .title {
+  .mainpage .pagetitle .title {
     font-size: 1.3rem;
   }
 
@@ -177,7 +183,7 @@ html {
     line-height: 25px;
   }
 
-  .pagelayout .pagetitle .desc {
+  .mainpage .pagetitle .desc {
     font-size: 1.1rem;
   }
 
