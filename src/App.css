@@ -15,8 +15,21 @@ html {
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
 }
 
+.mobile-sidebar {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgb(97, 97, 97);
+  z-index: 1;
+  height: 100%;
+}
+
 .sidebar:hover {
   cursor: default;
+}
+
+.sidebar .section .menu a {
+  color: #000;
+  display: block;
 }
 
 .sidebar .section .menu .item:hover {
@@ -27,38 +40,40 @@ html {
 /*Mobile Devices*/
 
 @media screen and (max-width: 449px) {
-  .sidebar {
-    height: 100vh;
+  .mobile-sidebar {
     width: 50vw;
+    height: 100vh;
     padding: 0.5em;
   }
 
-  .sidebar .section .header {
+  .mobile-sidebar .section .header {
+    padding-bottom: 0.5rem;
     font-size: 1.1rem;
     line-height: 25px;
   }
 
-  .sidebar .section .menu .item {
-    font-size: 0.6rem;
+  .mobile-sidebar .section .menu .item {
+    font-size: 0.8rem;
   }
 }
 
 /*Mini Ipads, etc.*/
 
 @media screen and (min-width: 450px) and (max-width: 767px) {
-  .sidebar {
+  .mobile-sidebar {
     height: 100vh;
     width: 35vw;
     padding: 0.75em;
   }
 
-  .sidebar .section .header {
-    font-size: 1rem;
+  .mobile-sidebar .section .header {
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
     line-height: 25px;
   }
 
-  .sidebar .section .menu .item {
-    font-size: 0.75rem;
+  .mobile-sidebar .section .menu .item {
+    font-size: 0.9rem;
   }
 }
 
@@ -72,12 +87,17 @@ html {
   }
 
   .sidebar .section .header {
-    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
     line-height: 25px;
   }
 
   .sidebar .section .menu .item {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .sidebar .section .menu .item:active {
+    color: var(--primary-color);
   }
 }
 
@@ -91,6 +111,7 @@ html {
   }
 
   .sidebar .section .header {
+    padding-bottom: 0.5rem;
     font-size: 1.25rem;
     line-height: 25px;
   }
