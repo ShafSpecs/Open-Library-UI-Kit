@@ -9,15 +9,34 @@ html {
   font-size: 18px;
 }
 
-.sidebar {
+.pagelayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainpage {
   color: #000;
   background-color: #fff;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.mainpage .pagetitle .desc {
+  color: var(--outer-details);
+}
+
+.sidebar {
+  color: #000;
+  background-color: rgb(241, 241, 241);
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
 }
 
 .mobile-sidebar {
   color: #000;
-  background-color: #fff;
+  background-color: rgb(241, 241, 241);
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
   z-index: 1;
   height: 100%;
@@ -46,6 +65,19 @@ html {
     padding: 0.5em;
   }
 
+  .mainpage {
+    width: 50vw;
+    height: 100vh;
+  }
+
+  .mainpage .pagetitle .title {
+    font-size: 1.2rem;
+  }
+
+  .mainpage .pagetitle .desc {
+    font-size: 0.8rem;
+  }
+
   .mobile-sidebar .section .header {
     padding-bottom: 0.5rem;
     font-size: 1.1rem;
@@ -53,7 +85,7 @@ html {
   }
 
   .mobile-sidebar .section .menu .item {
-    font-size: 0.8rem;
+    font-size: 0.76rem;
   }
 }
 
@@ -66,6 +98,19 @@ html {
     padding: 0.75em;
   }
 
+  .mainpage {
+    width: 65vw;
+    height: 100vh;
+  }
+
+  .mainpage .pagetitle .title {
+    font-size: 1.15rem;
+  }
+
+  .mainpage .pagetitle .desc {
+    font-size: 0.9rem;
+  }
+
   .mobile-sidebar .section .header {
     padding-bottom: 0.5rem;
     font-size: 1.1rem;
@@ -73,7 +118,7 @@ html {
   }
 
   .mobile-sidebar .section .menu .item {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -84,6 +129,19 @@ html {
     height: 100vh;
     width: 25vw;
     padding: 0.85em;
+  }
+
+  .mainpage {
+    width: 75vw;
+    height: 100vh;
+  }
+
+  .mainpage .pagetitle .title {
+    font-size: 1.25rem;
+  }
+
+  .mainpage .pagetitle .desc {
+    font-size: 0.9rem;
   }
 
   .sidebar .section .header {
@@ -110,10 +168,23 @@ html {
     padding: 1em;
   }
 
+  .mainpage {
+    width: 80vw;
+    height: 100vh;
+  }
+
+  .mainpage .pagetitle .title {
+    font-size: 1.3rem;
+  }
+
   .sidebar .section .header {
     padding-bottom: 0.5rem;
     font-size: 1.25rem;
     line-height: 25px;
+  }
+
+  .mainpage .pagetitle .desc {
+    font-size: 1.1rem;
   }
 
   .sidebar .section .menu .item {

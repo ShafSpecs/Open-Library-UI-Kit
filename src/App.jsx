@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import Sidebar from './modules/main pages/Sidebar'
+import PageLayout from './modules/main pages/PageLayout'
 import './App.css'
 
 function App() {
 
   return (
     <div>
-      <Sidebar />
+      <PageLayout />
     </div>
   )
 }
