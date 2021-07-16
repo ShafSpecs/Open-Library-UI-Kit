@@ -30,13 +30,13 @@ html {
 
 .sidebar {
   color: #000;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(241, 241, 241);
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
 }
 
 .mobile-sidebar {
   color: #000;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(241, 241, 241);
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
   z-index: 1;
   height: 100%;
