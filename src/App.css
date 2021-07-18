@@ -36,6 +36,7 @@ html {
   color: #000;
   background-color: rgb(241, 241, 241);
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
+  height: 100vh;
 }
 
 .mobile-sidebar {
@@ -43,8 +44,8 @@ html {
   background-color: rgb(241, 241, 241);
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
   z-index: 1;
-  height: 100%;
-  width: 70vw;
+  height: 100vh;
+  width: 90vw;
 }
 
 .sidebar:hover {
@@ -65,13 +66,14 @@ html {
 
 @media screen and (max-width: 449px) {
   .mobile-sidebar {
-    width: 50vw;
+    width: 100vw;
+    z-index: 2;
     height: 100vh;
     padding: 0.5em;
   }
 
   .mainpage {
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
   }
 
@@ -99,12 +101,13 @@ html {
 @media screen and (min-width: 450px) and (max-width: 767px) {
   .mobile-sidebar {
     height: 100vh;
-    width: 35vw;
+    width: 75vw;
     padding: 0.75em;
+    z-index: 2;
   }
 
   .mainpage {
-    width: 65vw;
+    width: 100vw;
     height: 100vh;
   }
 
