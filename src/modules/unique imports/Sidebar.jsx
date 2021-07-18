@@ -7,7 +7,7 @@ const Sidebar = () => {
 
   if (windowScreen < 768) {
     return(
-    <MobileSidebar />
+    <MobileSidebar/>
     )
   } else if (windowScreen > 767) {
     return(

@@ -12,8 +12,10 @@ const PageLayout = ({title='Page Title', description=`This page's description`, 
                     <h5 className='desc'>{description}</h5>
                 </div>
                 <div class="ui divider"></div>
-                <div className={classname}>
-                    <ComponentTab />
+                <div class="pusher">
+                    <div className={classname}>
+                        <ComponentTab />
+                    </div>
                 </div>
             </div>
         </div>
