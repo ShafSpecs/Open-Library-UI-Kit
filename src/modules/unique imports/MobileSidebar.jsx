@@ -2,8 +2,6 @@ import React from 'react'
 
 const MobileSidebar = () => {
     return (
-      <div className='mobile-navbar'>
-        <div class="ui menu">
             <div className="mobile-sidebar">
           <div className='section'>
             <div className='header'>Welcome</div>
@@ -32,9 +30,6 @@ const MobileSidebar = () => {
             </div>
           </div>
           <hr />
-        </div>
-          </div>
-          
         </div>
     )
 }

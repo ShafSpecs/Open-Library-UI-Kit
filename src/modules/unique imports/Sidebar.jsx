@@ -5,11 +5,11 @@ import MobileSidebar from './MobileSidebar'
 const Sidebar = () => {
   const windowScreen = screen.availWidth
 
-  if (windowScreen < 768) {
+  if (windowScreen < 760) {
     return(
-    <MobileSidebar/>
+    { /*<MobileSidebar/> */ }
     )
-  } else if (windowScreen > 767) {
+  } else if (windowScreen > 759) {
     return(
     <DesktopSidebar />
     )

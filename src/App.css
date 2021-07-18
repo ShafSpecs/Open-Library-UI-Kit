@@ -44,6 +44,7 @@ html {
   box-shadow: 3px 3px 3px rgb(97, 97, 97);
   z-index: 1;
   height: 100%;
+  width: 70vw;
 }
 
 .sidebar:hover {
