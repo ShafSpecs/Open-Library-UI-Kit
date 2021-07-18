@@ -2,18 +2,7 @@ import React from 'react'
 
 const MobileSidebar = () => {
     return (
-      <div className='mobile-navbar'>
-        <div class="ui menu">
-          <button class="ui icon button">
-            <i class="bars icon"></i>
-          </button>
-          <div class="header item">
-            Open Library UI Kit
-          </div>
-        </div>
-
-
-        <div className="mobile-sidebar">
+            <div className="mobile-sidebar">
           <div className='section'>
             <div className='header'>Welcome</div>
             <div className='menu'>
@@ -42,7 +31,6 @@ const MobileSidebar = () => {
           </div>
           <hr />
         </div>
-      </div>
     )
 }
 
