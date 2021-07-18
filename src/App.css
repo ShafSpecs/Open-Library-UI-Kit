@@ -28,6 +28,10 @@ html {
   color: var(--outer-details);
 }
 
+.codetab {
+  height: 2em;
+}
+
 .sidebar {
   color: #000;
   background-color: rgb(241, 241, 241);
