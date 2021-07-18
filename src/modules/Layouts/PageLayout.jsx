@@ -1,11 +1,12 @@
 import React from 'react'
-import Sidebar from '../unique imports/Sidebar'
+import MobileNavbar from '../unique imports/MobileNavbar'
+import DesktopSidebar from '../unique imports/DesktopSidebar'
 import ComponentTab from './ComponentTab'
 
 const PageLayout = ({title='Page Title', description=`This page's description`, classname }) => {
     return (
         <div className='pagelayout'>
-            {screen.availWidth > 759 ? <Sidebar /> : ''}
+            {screen.availWidth > 759 ? <DesktopSidebar /> : <MobileNavbar />}
             <div className='mainpage'>
                 <div className="pagetitle">
                     <h1 className='title'>{title}</h1>

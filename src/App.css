@@ -22,6 +22,7 @@ html {
   position: relative;
   height: 100%;
   padding: 0.5rem;
+  width: 100%;
 }
 
 .mainpage .pagetitle .desc {
@@ -62,9 +63,18 @@ html {
   cursor: pointer;
 }
 
+.navbar {
+  display: block;
+  width: 100vw;
+}
+
 /*Mobile Devices*/
 
 @media screen and (max-width: 449px) {
+  .pagelayout {
+    display: block;
+  }
+
   .mobile-sidebar {
     width: 100vw;
     z-index: 2;
@@ -74,7 +84,7 @@ html {
 
   .mainpage {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
   }
 
   .mainpage .pagetitle .title {
@@ -99,6 +109,10 @@ html {
 /*Mini Ipads, etc.*/
 
 @media screen and (min-width: 450px) and (max-width: 767px) {
+  .pagelayout {
+    display: block;
+  }
+
   .mobile-sidebar {
     height: 100vh;
     width: 75vw;
@@ -109,6 +123,7 @@ html {
   .mainpage {
     width: 100vw;
     height: 100vh;
+    display: block;
   }
 
   .mainpage .pagetitle .title {
