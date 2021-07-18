@@ -2,7 +2,7 @@ import React from 'react'
 
 const MobileSidebar = () => {
     return (
-            <div className='mobile-navbar'>
+      <div className='mobile-navbar'>
         <div class="ui menu">
           <button class="ui icon button">
             <i class="bars icon"></i>
@@ -42,7 +42,6 @@ const MobileSidebar = () => {
           </div>
           <hr />
         </div>
-
       </div>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import PageLayout from './modules/main pages/PageLayout'
+import PageLayout from './modules/Layouts/PageLayout'
 import './App.css'
 
 function App() {
