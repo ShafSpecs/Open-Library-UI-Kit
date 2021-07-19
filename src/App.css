@@ -42,11 +42,11 @@ html {
 
 .mobile-sidebar {
   color: #000;
-  background-color: rgb(241, 241, 241);
-  box-shadow: 3px 3px 3px rgb(97, 97, 97);
+  background-color: #fff;
   z-index: 1;
   height: 100vh;
   width: 100vw;
+  position: absolute;
 }
 
 .sidebar:hover {
