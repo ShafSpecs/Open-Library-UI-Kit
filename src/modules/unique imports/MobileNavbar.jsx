@@ -7,6 +7,7 @@ const MobileNavbar = () => {
     const openSidebar = () => {
         setOpen((initial) => initial = !initial)
     }
+    
     return (
         <div className='navbar'>
             <div class="ui borderless inverted menu">
