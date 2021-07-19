@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PageLayout from './modules/Layouts/PageLayout'
+import Homepage from './homepage/Hompage'
 import './App.css'
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <PageLayout />
+      <Homepage />
     </div>
   )
 }
