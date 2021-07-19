@@ -7,20 +7,21 @@ const MobileNavbar = () => {
     const openSidebar = () => {
         setOpen((initial) => initial = !initial)
     }
-
     return (
         <div className='navbar'>
             <div class="ui borderless inverted menu">
                 <div class="item">
                     <button class="ui inverted basic icon button" onClick={openSidebar}>
-                        <i class="bars icon"></i>
+                        <i class={`${open ? 'close' : 'bars'} icon`}></i>
                     </button>
                 </div>
                 <span class="item">
                   OpenLibrary UI Kit
                 </span>
             </div>
-            {open ? <MobileSidebar /> : ''}
+            <div className='modal'>
+                {open ? <MobileSidebar /> : ''}
+            </div>
         </div>
     )
 }
