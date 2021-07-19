@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MobileNavbar from '../unique imports/MobileNavbar'
 import DesktopSidebar from '../unique imports/DesktopSidebar'
 import ComponentTab from './ComponentTab'
@@ -13,10 +13,8 @@ const PageLayout = ({title='Page Title', description=`This page's description`, 
                     <h5 className='desc'>{description}</h5>
                 </div>
                 <div class="ui divider"></div>
-                <div class="pusher">
-                    <div className={classname}>
-                        <ComponentTab />
-                    </div>
+                <div className={classname}>
+                    <ComponentTab />
                 </div>
             </div>
         </div>
