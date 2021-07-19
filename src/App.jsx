@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import PageLayout from './modules/Layouts/PageLayout'
-import Homepage from './homepage/Hompage'
+import React from 'react'
+import Homepage from './Landing Page/Hompage'
 import './App.css'
 
 function App() {
