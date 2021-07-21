@@ -97,6 +97,13 @@ html {
   color: #fff;
 }
 
+.product-home {
+  z-index: 2;
+  background-color: #fff;
+  width: 90vw;
+  display: grid;
+}
+
 /*Mobile Devices*/
 
 @media screen and (max-width: 449px) {
