@@ -21,12 +21,12 @@ const Header = () => {
     }, [])
 
     return (
-        <div className='header'  style={{
-        backgroundColor: `${navBackground ? 'transparent' : 'pink'}`, 
-        color: `${navBackground ? 'black' : 'white'}`
-        }}>
-            OpenLibrary
-        </div>
+      <div className='header'  style={{
+      backgroundColor: `${navBackground ? 'white' : 'transparent'}`, 
+      color: `${navBackground ? 'black' : 'white'}`
+      }}>
+          OpenLibrary UI Kit
+      </div>
     )
 }
 
