@@ -45,9 +45,7 @@ const Hompage = () => {
                       <h1 className={classes.title}>Your ever-growing React UI Kit.</h1>
                       <h4>
                         Every landing page needs a small description after the big bold
-                        title, that{"'"}s why we added this text here. Add here all the
-                        information that can make you or your product create the first
-                        impression.
+                        title, that{"'"}s why we added this text here.
                       </h4>
                       <Button animated style={{backgroundColor: '#fe9526', color: 'white'}}>
                         <Link to='/introduction'>
