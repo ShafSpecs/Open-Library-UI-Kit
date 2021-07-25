@@ -1,5 +1,13 @@
+// import React
 import React from 'react'
+
+// import React Router
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+// import required components
 import Homepage from './Landing Page/Hompage'
+
+// import styles
 import './App.css'
 
 function App() {
@@ -8,9 +16,11 @@ function App() {
   })
 
   return (
-    <div>
-      <Homepage />
-    </div>
+    <Router>
+      <main>
+        <Route path='/' component={Homepage}/>
+      </main>
+    </Router>
   )
 }
 

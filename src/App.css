@@ -70,7 +70,7 @@ html {
   padding: 0px;
   margin: 0;
   position: fixed;
-  z-index: 3;
+  z-index: 13;
 }
 
 .header {
