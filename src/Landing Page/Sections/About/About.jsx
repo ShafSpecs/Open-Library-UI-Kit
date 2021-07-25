@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div classname='about'>
       <div class='ui basic center aligned segment'>
-        <h2>Extra things to do around here</h2>
+        <h2 style={{color: '#5c5c5c'}}>Extra things to do around here</h2>
       </div>
       <div class="ui stackable three column grid">
         <div class="column">
@@ -52,11 +52,11 @@ const About = () => {
           <div class='ui link card'>
             <div class='ui center aligned segment'>
               <div class='ui icon headr'>
-                <i class="github icon"></i>
+                <i class="heart icon"></i>
               </div>
               <br />
               <div style={{color: '#b1b1b1'}}>
-                Contribute to our github.
+                Donate to the project
               </div>
             </div>
           </div>
@@ -75,14 +75,14 @@ const About = () => {
           </div>
         </div>
         <div class="column">
-          <div class='ui link card'>
+          <div class='ui card'>
             <div class='ui center aligned segment'>
               <div class='ui icon headr'>
-                <i class="github icon"></i>
+                <i class="cogs icon"></i>
               </div>
               <br />
               <div style={{color: '#b1b1b1'}}>
-                Contribute to our github.
+                Become a beta user (coming soon...)
               </div>
             </div>
           </div>
