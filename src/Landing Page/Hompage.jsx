@@ -1,6 +1,9 @@
 // import react from it's library
 import React from 'react'
 
+// import Senatic-UI components
+import { Button, Icon } from 'semantic-ui-react'
+
 // import React Router
 import { Link } from 'react-router-dom';
 
@@ -9,6 +12,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // import miscellaneous packages from their respective diectory
 import classNames from "classnames";
+import LazyLoad from 'react-lazyload'
 
 // import styles
 import styles from "./Sections/landingPage";
@@ -33,6 +37,7 @@ const Hompage = () => {
             (<MobileNavbar />) 
             :
             (<Header />)}
+            <LazyLoad placeholder={<Icon loading name='spinner'/>}>
             <Parallax filter image={`${imageBg}`}>
                 <div className={classes.desc}>
                   <GridContainer>
@@ -44,18 +49,19 @@ const Hompage = () => {
                         information that can make you or your product create the first
                         impression.
                       </h4>
-                      <div class="ui animated button" tabindex="0" style={{backgroundColor: '#fe9526', color: 'white'}}>
+                      <Button animated style={{backgroundColor: '#fe9526', color: 'white'}}>
                         <Link to='/introduction'>
-                          <div class="visible content" style={{color: 'white'}}>Browse our Library</div>
-                          <div class="hidden content" style={{color: 'white'}}>
-                            <i class="right arrow icon"></i>
-                          </div>
+                          <Button.Content visible style={{color: 'white'}}>Browse our Library</Button.Content>
+                          <Button.Content hidden style={{color: 'white'}}>
+                            <Icon name='arrow right'/>
+                          </Button.Content>
                         </Link>
-                      </div>
+                      </Button>
                     </GridItem>
                   </GridContainer>
                 </div>
             </Parallax>
+            </LazyLoad>
             <div className={classNames(classes.main, classes.mainRaised)}>
               <div className={classes.container}>
                 <About />
