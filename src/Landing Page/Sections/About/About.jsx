@@ -11,7 +11,7 @@ const About = () => {
 
       {/* Grid outline and specifications (First row) */}
       <Grid stackable columns={3}>
-        <Grid.column>
+        <Grid.Column>
           {/* Column 1 card */}
           <Card centered>
             <Segment textAlign='center'>
@@ -23,8 +23,8 @@ const About = () => {
               </Header>
             </Segment>
           </Card>
-        </Grid.column>
-        <Grid.column>
+        </Grid.Column>
+        <Grid.Column>
           {/* Column 2 card */}
           <Card centered>
             <Segment textAlign='center'>
@@ -36,8 +36,8 @@ const About = () => {
               </Header>
             </Segment>
           </Card>
-        </Grid.column>
-        <Grid.column>
+        </Grid.Column>
+        <Grid.Column>
           {/* Column 3 card */}
           <Card centered>
             <Segment textAlign='center'>
@@ -49,8 +49,8 @@ const About = () => {
               </Header>
             </Segment>
           </Card>
-        </Grid.column>
-        <Grid.column>
+        </Grid.Column>
+        <Grid.Column>
           {/* Column 1 content */}
           <Card centered>
             <Segment textAlign='center'>
@@ -62,8 +62,8 @@ const About = () => {
               </Header>
             </Segment>
           </Card>
-        </Grid.column>
-        <Grid.column>
+        </Grid.Column>
+        <Grid.Column>
           {/* Content 2 card */}
           <Card centered>
             <Segment textAlign='center'>
@@ -75,8 +75,8 @@ const About = () => {
               </Header>
             </Segment>
           </Card>
-        </Grid.column>
-        <Grid.column>
+        </Grid.Column>
+        <Grid.Column>
           {/* Column 3 card */}
           <Card centered>
             <Segment textAlign='center'>
@@ -88,7 +88,7 @@ const About = () => {
               </Header>
             </Segment>
           </Card>
-        </Grid.column>
+        </Grid.Column>
       </Grid>
     </div>
   )

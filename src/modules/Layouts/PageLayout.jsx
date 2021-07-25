@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Divider } from 'semantic-ui-react'
 import MobileNavbar from '../unique imports/MobileNavbar'
 import DesktopSidebar from '../unique imports/DesktopSidebar'
 import ComponentTab from './ComponentTab'
@@ -12,7 +13,7 @@ const PageLayout = ({title='Page Title', description=`This page's description`, 
                     <h1 className='title'>{title}</h1>
                     <h5 className='desc'>{description}</h5>
                 </div>
-                <div class="ui divider"></div>
+                <Divider />
                 <div className={classname}>
                     <ComponentTab />
                 </div>
