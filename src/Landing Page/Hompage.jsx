@@ -20,7 +20,7 @@ import styles from "./Sections/landingPage";
 // import required components
 import MobileNavbar from '../modules/unique imports/MobileNavbar'
 import Header from '../modules/components/Header'
-import imageBg from '../Images/landing-bg.jpg'
+import imageBg from '../Images/landing-bg.webp'
 import GridContainer from './Sections/Grid/GridContainer'
 import GridItem from './Sections/Grid/GridItem'
 import Parallax from './Sections/Parallax/Parallax'
