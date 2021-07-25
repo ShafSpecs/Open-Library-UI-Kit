@@ -1,19 +1,20 @@
 import React from 'react'
+import { Segment } from 'semantic-ui-react'
 
-const About = () => {
+const About = () => {  
   return (
     <div classname='about'>
       {/* Header for the about section */}
-      <div class='ui basic center aligned segment'>
+      <Segment basic textAlign='center'>
         <h2 style={{color: '#5c5c5c'}}>Extra things to do around here</h2>
-      </div>
+      </Segment>
 
       {/* Grid outline and specifications (First row) */}
       <div class="ui stackable three column grid">
         <div class="column">
           {/* Column 1 card */}
           <div class='ui centered link card'>
-            <div class='ui center aligned segment'>
+            <Segment textAlign='center'>
               {/* Icon */}
               <div class='ui icon headr'>
                 <i class="github icon"></i>
@@ -23,13 +24,13 @@ const About = () => {
               <div style={{color: '#b1b1b1'}}>
                 Contribute to our github.
               </div>
-            </div>
+            </Segment>
           </div>
         </div>
         <div class="column">
           {/* Column 2 card */}
           <div class='ui centered link card'>
-            <div class='ui center aligned segment'>
+            <Segment textAlign='center'>
               {/* Icon */}
               <div class='ui icon headr'>
                 <i class="file alternate icon"></i>
@@ -39,13 +40,13 @@ const About = () => {
               <div style={{color: '#b1b1b1'}}>
                 Get ready-made components for your project
               </div>
-            </div>
+            </Segment>
           </div>
         </div>
         <div class="column">
           {/* Column 3 card */}
           <div class='ui centered link card'>
-            <div class='ui center aligned segment'>
+            <Segment textAlign='center'>
               {/* Icon */}
               <div class='ui icon headr'>
                 <i class="coffee icon"></i>
@@ -55,7 +56,7 @@ const About = () => {
               <div style={{color: '#b1b1b1'}}>
                 Buy me a cup of coffee on buymeacoffee.com
               </div>
-            </div>
+            </Segment>
           </div>
         </div>
       </div>
