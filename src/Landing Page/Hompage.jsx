@@ -1,6 +1,9 @@
 // import react from it's library
 import React from 'react'
 
+// import React Router
+import { Link } from 'react-router-dom';
+
 // import needed packages from material-ui/core
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -42,10 +45,12 @@ const Hompage = () => {
                         impression.
                       </h4>
                       <div class="ui animated button" tabindex="0" style={{backgroundColor: '#fe9526', color: 'white'}}>
-                        <div class="visible content">Browse our Library</div>
-                        <div class="hidden content">
-                          <i class="right arrow icon"></i>
-                        </div>
+                        <Link to='/introduction'>
+                          <div class="visible content" style={{color: 'white'}}>Browse our Library</div>
+                          <div class="hidden content" style={{color: 'white'}}>
+                            <i class="right arrow icon"></i>
+                          </div>
+                        </Link>
                       </div>
                     </GridItem>
                   </GridContainer>

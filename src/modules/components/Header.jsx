@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [navBackground, setNavBackground] = useState(false)
@@ -21,12 +22,14 @@ const Header = () => {
     }, [])
 
     return (
+      <Link to='/'>
       <div className='header'  style={{
       backgroundColor: `${navBackground ? 'white' : 'transparent'}`, 
       color: `${navBackground ? 'black' : 'white'}`
       }}>
           OpenLibrary UI Kit
       </div>
+      </Link>
     )
 }
 
