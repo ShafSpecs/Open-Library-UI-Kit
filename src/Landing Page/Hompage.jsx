@@ -8,6 +8,7 @@ import GridContainer from './Sections/Grid/GridContainer'
 import GridItem from './Sections/Grid/GridItem'
 import Parallax from './Sections/Parallax/Parallax'
 import styles from "./Sections/landingPage";
+import About from './Sections/About/About';
 
 const useStyles = makeStyles(styles);
 
@@ -21,7 +22,7 @@ const Hompage = () => {
             :
             (<Header />)}
             <Parallax filter image={`${imageBg}`}>
-                <div className={classes.container}>
+                <div className={classes.desc}>
                   <GridContainer>
                     <GridItem xs={12} sm={12} md={6}>
                       <h1 className={classes.title}>Your Story Starts With Us.</h1>
@@ -37,7 +38,7 @@ const Hompage = () => {
             </Parallax>
             <div className={classNames(classes.main, classes.mainRaised)}>
               <div className={classes.container}>
-                fghjhgfghj
+                <About />
               </div>
             </div>   
         </div>

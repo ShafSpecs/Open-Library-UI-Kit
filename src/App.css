@@ -106,11 +106,9 @@ html {
   z-index: 1;
 }
 
-.product-home {
-  z-index: 5;
-  width: 90vw;
-  display: grid;
-  position: relative;
+.about {
+  color: #000;
+  z-index: 4;
 }
 
 /*Mobile Devices*/
