@@ -5,8 +5,8 @@ const About = () => {
   return (
     <div classname='about'>
       {/* Header for the about section */}
-      <Header as='h3' textAlign='center'>
-        Centered
+      <Header as='h2' textAlign='center' style={{padding: '1rem', color: '#6d6b6c'}}>
+        Extra things you can do
       </Header>
 
       {/* Grid outline and specifications (First row) */}
@@ -15,10 +15,10 @@ const About = () => {
           {/* Column 1 card */}
           <Card centered>
             <Segment textAlign='center'>
-              <Header as='h3' icon>
-                <Icon name='cogs' />
+              <Header as='h6' icon>
+                <Icon name='github' />
                 <Header.Subheader>
-                  Become a beta user (coming soon...)
+                  Contribute on github.
                 </Header.Subheader>
               </Header>
             </Segment>
@@ -28,10 +28,10 @@ const About = () => {
           {/* Column 2 card */}
           <Card centered>
             <Segment textAlign='center'>
-              <Header as='h3' icon>
-                <Icon name='cogs' />
+              <Header as='h6' icon>
+                <Icon name='file alternative' />
                 <Header.Subheader>
-                  Become a beta user (coming soon...)
+                  Get ready-made components
                 </Header.Subheader>
               </Header>
             </Segment>
@@ -41,10 +41,10 @@ const About = () => {
           {/* Column 3 card */}
           <Card centered>
             <Segment textAlign='center'>
-              <Header as='h3' icon>
-                <Icon name='cogs' />
+              <Header as='h6' icon>
+                <Icon name='coffee' />
                 <Header.Subheader>
-                  Become a beta user (coming soon...)
+                  Buy me a coffee on buymeacoffee.com
                 </Header.Subheader>
               </Header>
             </Segment>
@@ -54,10 +54,10 @@ const About = () => {
           {/* Column 1 content */}
           <Card centered>
             <Segment textAlign='center'>
-              <Header as='h3' icon>
-                <Icon name='cogs' />
+              <Header as='h6' icon>
+                <Icon name='heart' />
                 <Header.Subheader>
-                  Become a beta user (coming soon...)
+                  Donate to the project
                 </Header.Subheader>
               </Header>
             </Segment>
@@ -67,10 +67,10 @@ const About = () => {
           {/* Content 2 card */}
           <Card centered>
             <Segment textAlign='center'>
-              <Header as='h3' icon>
-                <Icon name='cogs' />
+              <Header as='h6' icon>
+                <Icon name='share' />
                 <Header.Subheader>
-                  Become a beta user (coming soon...)
+                  Share with friends and co-developers
                 </Header.Subheader>
               </Header>
             </Segment>
@@ -79,8 +79,8 @@ const About = () => {
         <Grid.Column>
           {/* Column 3 card */}
           <Card centered>
-            <Segment textAlign='center'>
-              <Header as='h3' icon>
+            <Segment disabled textAlign='center'>
+              <Header as='h6' icon>
                 <Icon name='cogs' />
                 <Header.Subheader>
                   Become a beta user (coming soon...)
