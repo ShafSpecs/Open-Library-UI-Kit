@@ -23,12 +23,12 @@ const Header = () => {
 
     return (
       <Link to='/'>
-      <div className='header'  style={{
-      backgroundColor: `${navBackground ? 'white' : 'transparent'}`, 
-      color: `${navBackground ? 'black' : 'white'}`
-      }}>
-          OpenLibrary UI Kit
-      </div>
+        <div className='landing-page-header'  style={{
+        backgroundColor: `${navBackground ? 'white' : 'transparent'}`, 
+        color: `${navBackground ? 'black' : 'white'}`,
+        }}>
+            OpenLibrary UI Kit
+        </div>
       </Link>
     )
 }
