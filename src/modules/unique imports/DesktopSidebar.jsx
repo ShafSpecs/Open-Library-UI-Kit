@@ -1,8 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const DesktopSidebar = () => {
     return (
-        <div className='sidebar'>
+      <div className='sidebar'>
+        <Link to='/'>
+          <div style={{color: '#fe9526', display: 'inline-block', fontSize: '1.5rem', lineHeight: '1.6rem', paddingBottom: '10px'}}>
+            Open Library
+            <span style={{color: '#00194c', display: 'block'}}>
+              UI Kit
+            </span>
+          </div>
+        </Link>
         <div className='section'>
           <div className='header'>Welcome</div>
           <div className='menu'>
