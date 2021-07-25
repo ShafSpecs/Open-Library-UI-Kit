@@ -1,26 +1,27 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import { Button, Icon, Menu } from 'semantic-ui-react'
 
 const ComponentTab = ({ content }) => {
     return (
         <div className='codetab'>
-            <div class="right menu">
-                <div class={`ui animated bottom right floated button`} tabindex="0">
-                    <div class="visible content">
-                        <i class="css3 alternate icon"></i>
-                    </div>
-                    <div class="hidden content">
+            <Menu position='right'>
+                <Button floated='right' animated>
+                    <Button.Content visible>
+                        <Icon name="css3 alternate" />
+                    </Button.Content>
+                    <Button.Content hidden>
                         CSS
-                    </div>
-                </div>
-                <div class={`ui vertical animated right floated button`} tabindex="0">
-                    <div class="visible content">
+                    </Button.Content>
+                </Button>
+                <Button floated='right' animated='fade'>
+                    <Button.Content visible>
                         <i class="react icon"></i>
-                    </div>
-                    <div class="hidden content">
+                    </Button.Content>
+                    <Button.Content hidden>
                         React
-                    </div>
-                </div>
-            </div>
+                    </Button.Content>
+                </Button>
+            </Menu>
             <div>
                 {content}
             </div>
