@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import MobileSidebar from './MobileSidebar'
+import { Icon, Button } from 'semantic-ui-react'
+import { Menu } from '@material-ui/core'
 
 const MobileNavbar = () => {
     const [open, setOpen] = useState(false)
@@ -10,16 +12,16 @@ const MobileNavbar = () => {
     
     return (
         <div className='navbar'>
-            <div class="ui borderless inverted menu">
-                <div class="item">
-                    <button class="ui inverted basic icon button" onClick={openSidebar}>
-                        <i class={`${open ? 'close' : 'bars'} icon`}></i>
-                    </button>
-                </div>
-                <span class="item">
+            <Menu borderless inverted>
+                <Menu.item>
+                    <Button icon basic inverted onClick={openSidebar}>
+                        <Icon name={`${open ? 'close' : 'bars'} icon`} />
+                    </Button>
+                </Menu.item>
+                <Menu.item>
                   OpenLibrary UI Kit
-                </span>
-            </div>
+                </Menu.item>
+            </Menu>
             <div className='modal'>
                 {open ? <MobileSidebar /> : ''}
             </div>
