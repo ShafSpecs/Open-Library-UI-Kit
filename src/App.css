@@ -46,7 +46,8 @@ html {
   z-index: 1;
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: relative;
+  bottom: 9px;
 }
 
 .sidebar:hover {
@@ -66,6 +67,48 @@ html {
 .navbar {
   display: block;
   width: 100vw;
+  padding: 0px;
+  margin: 0;
+  position: fixed;
+  z-index: 13;
+}
+
+.landing-page-header {
+  position: fixed;
+  transition: "1s ease";
+  -webkit-transition: "1s ease";
+  -moz-transition: "1s ease";
+  -ms-transition: "1s ease";
+  -o-transition: "1s ease";
+  width: 100vw;
+  z-index: 2;
+  padding: 1em;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bg-image {
+  width: 100vw;
+  height: 75vh;
+  filter: brightness(45%);
+  -webkit-filter: brightness(45%);
+}
+
+.sectiondesktopnav {
+  width: 100vw;
+  height: 65vh;
+  color: #fff;
+  z-index: 1;
+}
+
+.topofhomepage {
+  z-index: 1;
+}
+
+.about {
+  color: #000;
+  z-index: 4;
 }
 
 /*Mobile Devices*/
@@ -134,13 +177,13 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
   }
 
   .mobile-sidebar {
-    height: fit-content;
+    height: max-content;
     width: 100vw;
-    z-index: 2;
+    z-index: 1;
   }
 
   .mainpage {
