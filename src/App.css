@@ -20,9 +20,9 @@ html {
   background-color: #fff;
   display: inline-block;
   position: relative;
-  height: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
   width: 100%;
+  height: 100%;
 }
 
 .mainpage .pagetitle .desc {
@@ -47,7 +47,7 @@ html {
   height: 100vh;
   width: 100vw;
   position: relative;
-  bottom: 9px;
+  bottom: 1rem;
 }
 
 .sidebar:hover {
@@ -55,6 +55,11 @@ html {
 }
 
 .sidebar .section .menu a {
+  color: #000;
+  display: block;
+}
+
+.mobile-sidebar .section .menu .item {
   color: #000;
   display: block;
 }
@@ -67,6 +72,7 @@ html {
 .navbar {
   display: block;
   width: 100vw;
+  height: 7vh;
   padding: 0px;
   margin: 0;
   position: fixed;
@@ -111,6 +117,10 @@ html {
   z-index: 4;
 }
 
+.modal {
+  z-index: 7;
+}
+
 /*Mobile Devices*/
 
 @media screen and (max-width: 449px) {
@@ -127,15 +137,21 @@ html {
 
   .mainpage {
     width: 100vw;
-    height: 100%;
+    position: absolute;
+    display: block;
+    height: 91vh;
+    bottom: 0;
   }
 
   .mainpage .pagetitle .title {
     font-size: 1.2rem;
+    padding-bottom: 0;
   }
 
   .mainpage .pagetitle .desc {
     font-size: 0.8rem;
+    position: relative;
+    bottom: 0.8rem;
   }
 
   .mobile-sidebar .section .header {
@@ -188,16 +204,21 @@ html {
 
   .mainpage {
     width: 100vw;
-    height: 100vh;
+    position: absolute;
     display: block;
+    height: 92vh;
+    bottom: 0;
   }
 
   .mainpage .pagetitle .title {
     font-size: 1.15rem;
+    padding-bottom: 0;
   }
 
   .mainpage .pagetitle .desc {
     font-size: 0.9rem;
+    position: relative;
+    bottom: 0.8rem;
   }
 
   .mobile-sidebar .section .header {

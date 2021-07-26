@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import MobileSidebar from './MobileSidebar'
 import { Icon, Button, Menu } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
 
 const MobileNavbar = () => {
     const [open, setOpen] = useState(false)
@@ -17,9 +18,11 @@ const MobileNavbar = () => {
                         <Icon name={`${open ? 'close' : 'bars'} icon`} />
                     </Button>
                 </Menu.Item>
-                <Menu.Item>
-                  OpenLibrary UI Kit
-                </Menu.Item>
+                <Link to='/'>
+                    <Menu.Item>
+                      OpenLibrary UI Kit
+                    </Menu.Item>
+                </Link>
             </Menu>
             <div className='modal'>
                 {open ? <MobileSidebar /> : ''}

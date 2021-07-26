@@ -15,7 +15,7 @@ const ComponentTab = ({ content }) => {
                 </Button>
                 <Button floated='right' animated='fade'>
                     <Button.Content visible>
-                        <i class="react icon"></i>
+                        <Icon name="react"></Icon>
                     </Button.Content>
                     <Button.Content hidden>
                         React
