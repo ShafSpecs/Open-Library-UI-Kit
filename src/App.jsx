@@ -12,10 +12,6 @@ import PageLayout from './modules/Layouts/PageLayout'
 import './App.css'
 
 function App() {
-  window.addEventListener('resize', () => {
-    location.reload()
-  })
-
   return (
     <Router>
       <main>

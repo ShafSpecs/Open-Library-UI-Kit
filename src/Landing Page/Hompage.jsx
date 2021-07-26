@@ -1,5 +1,5 @@
-// import react from it's library
-import React from 'react'
+// import react and hooks from the react library
+import React, { useEffect, useState } from 'react'
 
 // import Senatic-UI components
 import { Button, Icon } from 'semantic-ui-react'
@@ -28,15 +28,55 @@ import About from './Sections/About/About';
 
 const useStyles = makeStyles(styles);
 
+// create a `viewportContext` to store state of page dimensions.
+const viewportContext = React.createContext({});
+
+// function to create a state for the width and height of page.
+const ViewportProvider = ({ children }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
+
+  // function to change the current width and height to an updated one.
+  const handleWindowResize = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
+  return (
+    <viewportContext.Provider value={{ width, height }}>
+      {children}
+    </viewportContext.Provider>
+  );
+};
+
+/* Rewrite the "useViewport" hook to pull the width and height values
+   out of the context instead of calculating them itself */
+const useViewport = () => {
+  const { width, height } = React.useContext(viewportContext);
+  return { width, height };
+}
+
+// Component for the Top navbar of the page (depending on the page width)
+const Navbar = () => {
+  const { width } = useViewport();
+  const breakpoint = 760;
+
+  return width < breakpoint ? <MobileNavbar /> : <Header />;
+};
+
+
 const Hompage = () => {
     const classes = useStyles();
 
     return (
+      <ViewportProvider>
         <div className='home'>
-            {window.innerWidth < 760 ? 
-            (<MobileNavbar />) 
-            :
-            (<Header />)}
+            <Navbar />
             <LazyLoad placeholder={<Icon loading name='spinner'/>}>
             <Parallax filter image={`${imageBg}`}>
                 <div className={classes.desc}>
@@ -47,13 +87,11 @@ const Hompage = () => {
                         Every landing page needs a small description after the big bold
                         title, that{"'"}s why we added this text here.
                       </h4>
-                      <Button animated style={{backgroundColor: '#fe9526', color: 'white'}}>
-                        <Link to='/introduction'>
+                      <Button as={Link} to='/introduction' animated style={{backgroundColor: '#fe9526', color: 'white'}}>
                           <Button.Content visible style={{color: 'white'}}>Browse our Library</Button.Content>
                           <Button.Content hidden style={{color: 'white'}}>
                             <Icon name='arrow right'/>
                           </Button.Content>
-                        </Link>
                       </Button>
                     </GridItem>
                   </GridContainer>
@@ -66,6 +104,7 @@ const Hompage = () => {
               </div>
             </div>   
         </div>
+      </ViewportProvider>
     )
 }
 
