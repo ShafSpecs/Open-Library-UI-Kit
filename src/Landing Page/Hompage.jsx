@@ -44,6 +44,8 @@ const ViewportProvider = ({ children }) => {
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 

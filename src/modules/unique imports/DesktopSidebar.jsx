@@ -15,27 +15,27 @@ const DesktopSidebar = () => {
         <div className='section'>
           <div className='header'>Welcome</div>
           <div className='menu'>
-            <a className="item">Introduction</a>
-            <a className="item">Getting started</a>
-            <a className="item">Examples</a>
+            <Link to='/introduction'><div className="item">Introduction</div></Link>
+            <Link to='/getting-started'><div className="item">Getting started</div></Link>
+            <Link to='/examples'><div className="item">Examples</div></Link>
           </div>
         </div>
         <hr />
         <div className='section'>
           <div className='header'>Page Elements</div>
           <div className='menu'>
-            <a className="item">Buttons</a>
-            <a className="item">Inputs</a>
-            <a className="item">Checkboxes</a>
+            <Link to='/button'><div className="item">Buttons</div></Link>
+            <Link to='/input'><div className="item">Inputs</div></Link>
+            <Link to='/checkboxes'><div className="item">Checkboxes</div></Link>
           </div>
         </div>
         <hr />
         <div className='section'>
           <div className='header'>Components</div>
           <div className='menu'>
-            <a className="item">Menu</a>
-            <a className="item">Tables</a>
-            <a className="item">Dropdowns</a>
+            <Link to='/menu'><div className="item">Menu</div></Link>
+            <Link to='/table'><div className="item">Tables</div></Link>
+            <Link to='/dropdown'><div className="item">Dropdowns</div></Link>
           </div>
         </div>
         <hr />
