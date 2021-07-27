@@ -15,7 +15,7 @@ const MobileNavbar = () => {
             <Menu borderless inverted>
                 <Menu.Item>
                     <Button icon basic inverted onClick={openSidebar}>
-                        <Icon name={`${open ? 'close' : 'bars'} icon`} />
+                        <Icon name={`${open ? 'close' : 'bars'}`} />
                     </Button>
                 </Menu.Item>
                 <Link to='/'>
@@ -25,7 +25,7 @@ const MobileNavbar = () => {
                 </Link>
             </Menu>
             <div className='modal'>
-                {open ? <MobileSidebar /> : ''}
+                {open ? <MobileSidebar func={openSidebar}/> : ''}
             </div>
         </div>
     )
