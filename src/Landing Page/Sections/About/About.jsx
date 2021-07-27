@@ -3,7 +3,7 @@ import { Segment, Card, Header, Icon, Grid } from 'semantic-ui-react'
 
 const About = () => {  
   return (
-    <div classname='about'>
+    <div className='about'>
       {/* Header for the about section */}
       <Header as='h2' textAlign='center' style={{padding: '1rem', color: '#6d6b6c'}}>
         Extra things you can do
@@ -29,7 +29,7 @@ const About = () => {
           <Card centered>
             <Segment textAlign='center'>
               <Header as='h6' icon>
-                <Icon name='file alternative' />
+                <Icon name='file alternate' />
                 <Header.Subheader>
                   Get ready-made components
                 </Header.Subheader>
