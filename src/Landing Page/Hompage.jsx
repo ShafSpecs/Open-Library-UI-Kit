@@ -77,7 +77,7 @@ const Hompage = () => {
 
     return (
       <ViewportProvider>
-        <div className='home' style={{height: '3000px'}}>
+        <div className='home'>
             <Navbar />
             <LazyLoad placeholder={<Icon loading name='spinner'/>}>
             <Parallax filter image={`${imageBg}`}>
