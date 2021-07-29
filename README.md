@@ -60,3 +60,4 @@ to install dependencies. You can edit and add content and pages as you please.
 
 ## How to report bug or request feature
 
+To request or report, create an issue and if it's deemed necessary or advisable, would be acted upon immediately. Or, you can create a pull request and we will take it from there.
