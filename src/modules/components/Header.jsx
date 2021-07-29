@@ -1,4 +1,7 @@
+// import react core components
 import React, { useState, useEffect, useRef } from 'react'
+
+// import Link from React Router
 import { Link } from 'react-router-dom'
 
 const Header = () => {
