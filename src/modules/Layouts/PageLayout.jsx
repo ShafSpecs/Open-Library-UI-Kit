@@ -49,7 +49,7 @@ const Navbar = () => {
 };
 
 
-const PageLayout = ({title='Page Title', description=`This page's description`, classname }) => {
+const PageLayout = ({title='Page Title', description=`This page's description`, classname, children=`This page's description` }) => {
     return (
         <ViewportProvider>
         <div className='pagelayout'>
@@ -61,7 +61,7 @@ const PageLayout = ({title='Page Title', description=`This page's description`, 
                 </div>
                 <Divider />
                 <div className={classname}>
-                    <ComponentTab />
+                  {children}
                 </div>
             </div>
         </div>
