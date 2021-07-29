@@ -58,5 +58,5 @@ npm install
 to install dependencies. You can edit and add content and pages as you please. 
 
 
-# How to report bug or request feature
+## How to report bug or request feature
 
