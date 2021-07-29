@@ -44,3 +44,19 @@ The `Image` folder contains images sourced from free image sites, **all ownershi
 The `modules` folder contains three distinctive folders. `Layouts` folder, `unique imports` and `components` folder. The Layouts folder have two files, `PageLayout.jsx` and `ComponentTab.jsx`. `PageLayout.jsx` is the container used for the skeleton of each UI kit component and `ComponentTab.jsx` is a plain component designed to render each of your component in your respective pages, just place it in your page layout as aprop to render every time.
 
 The unique imports folder contains `MobileNavbar.jsx` that contains the navbar used for mobile resolution, `Desktop SideBar.jsx` contains  the sidebar component used for the library in Desktop resolution. 
+
+
+The `components` folder contains the Homepage header. All these can be edited and formatted to your liking, just update the imports.
+
+
+## How to use in project
+
+To use in your project, fork this repository then clone it. Thereafter run
+```
+npm install
+```
+to install dependencies. You can edit and add content and pages as you please. 
+
+
+# How to report bug or request feature
+
